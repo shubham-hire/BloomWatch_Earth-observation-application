@@ -683,7 +683,10 @@ function App() {
         {currentPage === "landing" && renderLandingPage()}
         {currentPage === "seasonal" && renderSeasonalPatterns()}
         {currentPage === "global" && renderGlobalActivity()}
-        {currentPage === "applications" && <ExpandableApplications />}
+        {/* {currentPage === "applications" && <ExpandableApplications />} */}
+        {currentPage === "applications" && (
+          <ExpandableApplications applications={applications} />
+        )}
         {currentPage === "data" && renderDataSources()}
         {currentPage === "about" && renderAboutPage()}
       </main>
