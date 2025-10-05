@@ -750,7 +750,7 @@
 }
 
 /* Applications Page */
-.applications-page {
+/* .applications-page {
   background: #0a0a0a;
   min-height: 100vh;
   padding: 2rem;
@@ -823,7 +823,152 @@
   position: absolute;
   left: 0;
   font-weight: bold;
+} */
+
+
+/* 🌍 Applications Section */
+.applications-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+  padding: 2rem;
 }
+
+/* Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #d1d5db;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.page-tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #ec4899, #8b5cf6);
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Swipeable scroll container */
+.applications-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 2rem;
+  padding: 1rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* Scrollbar (visible but subtle) */
+.applications-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.applications-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+/* Individual card */
+.application-card {
+  flex: 0 0 320px; /* fixed width for horizontal swipe */
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.application-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Icon container */
+.app-icon-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+.application-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.application-card p {
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Benefits list */
+.benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-list li {
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  padding-left: 1rem;
+  color: #10b981; /* default green tone */
+  transition: color 0.3s ease;
+}
+
+.benefits-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: currentColor;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .application-card {
+    flex: 0 0 280px;
+    padding: 1.5rem;
+  }
+}
+
+
 
 /* Data Sources Page */
 .data-sources-page {

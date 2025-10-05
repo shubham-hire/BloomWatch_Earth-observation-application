@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { AnimatePresence, motion } from "framer-motion";
+
 import {
   MapPin,
   Activity,
@@ -497,7 +499,25 @@ function App() {
         </p>
       </div>
 
-      <div className="applications-grid">
+      {/* <div className="applications-grid">
+        {applications.map((app, index) => (
+          <div key={index} className="application-card">
+            <div className="app-icon-container" style={{ color: app.color }}>
+              {app.icon}
+            </div>
+            <h3>{app.title}</h3>
+            <p>{app.description}</p>
+            <ul className="benefits-list">
+              {app.benefits.map((benefit, idx) => (
+                <li key={idx} style={{ color: app.color }}>
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div> */}
+      <div className="applications-scroll-container">
         {applications.map((app, index) => (
           <div key={index} className="application-card">
             <div className="app-icon-container" style={{ color: app.color }}>
