@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { AnimatePresence, motion } from "framer-motion";
-
+import ExpandableApplications from "./components/ExpandableApplications";
 import {
   MapPin,
   Activity,
@@ -684,7 +683,7 @@ function App() {
         {currentPage === "landing" && renderLandingPage()}
         {currentPage === "seasonal" && renderSeasonalPatterns()}
         {currentPage === "global" && renderGlobalActivity()}
-        {currentPage === "applications" && renderApplications()}
+        {currentPage === "applications" && <ExpandableApplications />}
         {currentPage === "data" && renderDataSources()}
         {currentPage === "about" && renderAboutPage()}
       </main>
