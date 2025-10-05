@@ -181,9 +181,9 @@ const dataSources = [
     color: "#ec4899",
   },
   {
-    name: "PACE",
-    type: "Ocean Color",
-    description: "Plankton, Aerosol, Cloud ocean Ecosystem",
+    name: "Sentinel",
+    type: "Land monitoring",
+    description: "optical multispectral imaging satellite for land monitoring",
     resolution: "1km spatial",
     color: "#ec4899",
   },
@@ -619,7 +619,7 @@ function App() {
         </div>
         <div className="footer-attribution">
           <p>
-            Powered by NASA Earth Observations - EMIT - PACE - Landsat - MODIS -
+            Powered by NASA Earth Observations - EMIT - Sentinel - Landsat - MODIS -
             VIIRS - AVIRIS
           </p>
           <p>All satellite data is publicly available through NASA's EOSDIS</p>

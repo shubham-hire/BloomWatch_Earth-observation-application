@@ -8,7 +8,7 @@ type ApplicationType = {
   description: string;
   benefits: string[];
   color: string;
-  imageUrl?: string; // optional, used for expanded image
+  imageUrl?: string; 
 };
 
 export default function ExpandableApplications({
