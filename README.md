@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# 🌍 BloomWatch — Intelligent Earth Observation Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Tech](https://img.shields.io/badge/tech-React%20%7C%20Node.js%20%7C%20GeoJSON-lightgrey)
 
-Currently, two official plugins are available:
+## 🛰️ Overview
+**BloomWatch** is a smart Earth-observation platform designed to analyze and visualize bloom regions using satellite data.  
+It helps **geo researchers, farmers, land inspectors, and scientists** monitor environmental changes, track bloom areas, and make data-driven agricultural or ecological decisions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 🌐 Interactive map visualization of bloom areas  
+- 📊 Region-based bloom data analytics  
+- 📅 Temporal tracking — observe changes over time  
+- 🔍 Custom search by coordinates or regions  
+- ⚡ Fast and optimized rendering with dynamic tiles  
 
-## React Compiler
+## 🧠 Tech Stack
+- **Frontend:** React, TailwindCSS, Leaflet.js  
+- **Backend:** Node.js, Express  
+- **Database:** MongoDB  
+- **APIs:** OpenStreetMap, Sentinel Hub (or similar Earth observation APIs)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Installation
+```bash
+# Clone the repository
+git clone https://github.com/shubham-hire/BloomWatch_Earth-observation-application.git
 
-## Expanding the ESLint configuration
+# Navigate to project directory
+cd BloomWatch_Earth-observation-application
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Install dependencies
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Run the development server
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Usage
+Once started, open your browser and go to **http://localhost:3000**.  
+Select your target region, and BloomWatch will display bloom data and visual overlays.  
+You can adjust layers, dates, and view patterns interactively.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🤝 Contributing
+Contributions are welcome!  
+If you have ideas to improve BloomWatch, feel free to fork the repo, create a branch, and submit a pull request.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📜 License
+This project is licensed under the **MIT License** — see the LICENSE file for details.
+
+---
+> Built with passion for a cleaner, greener planet 🌱  
+> **Author:** [Shubham Hire](https://github.com/shubham-hire)
