@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 
+
+//application icon types..
 type ApplicationType = {
   icon: React.ReactNode;
   title: string;
@@ -11,6 +13,7 @@ type ApplicationType = {
   imageUrl?: string; 
 };
 
+//export function
 export default function ExpandableApplications({
   applications,
 }: {
