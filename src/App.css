@@ -1113,7 +1113,7 @@
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive adjustments */
+/* Responsive adjustment */
 @media (max-width: 768px) {
   .application-card {
     padding: 1rem;
