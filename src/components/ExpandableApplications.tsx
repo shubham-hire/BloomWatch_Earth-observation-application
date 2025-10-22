@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-
+// card design
 //application icon types..
 type ApplicationType = {
   icon: React.ReactNode;
