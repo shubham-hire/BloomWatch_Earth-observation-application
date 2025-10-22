@@ -1025,7 +1025,7 @@
   box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
 }
 
-/* Card header: title + details button */
+/* Card header: title + details */
 .card-header {
   display: flex;
   justify-content: space-between;
